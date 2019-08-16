@@ -14,11 +14,15 @@ Now we discuss various steps in git-tagging:
 git tag (tagname)                                                                                                                 
   
 ##### 4.3.1.2 Annotated tags
-git tag -a (tagname) -m ('comment')                                                                                  
+git tag -a (tagname) -m ('comment')     
+
+![](Screenshot%20(43).png)
 
 #### 4.3.2 Show/display tags
 * git tag 
 * git show (tagname)
+
+![](Screenshot%20(44).png)
 
 #### 4.3.3 Delete tags
 ##### 4.3.3.1 Deleting a single tag
@@ -31,22 +35,40 @@ git tag -d (tagname) (tagname) (tagname) .....
 #### 4.3.4 Working remote
 ##### 4.3.4.1 Pushing from local to remote
 * git push origin (tagname)
+
+![](Screenshot%20(52)%20-%20Copy.png)
+![](Screenshot%20(47).png)
+![](Screenshot%20(48).png)
+
 * git push origin --tags
 * git push --tags
+
+![](Screenshot%20(52).png)
+![](Screenshot%20(49).png)
 
 ##### 4.3.4.2 Deleting tags from remote
 * git push origin -d (tagname)
 * git push origin --delete (tagname)
 * git push origin : (tagname)
 
+![](Screenshot%20(53)%20-%20Copy%20-%20Copy.png)
+![](Screenshot%20(50).png)
+
 ##### 4.3.4.2 Deleting mulitple tags from remote
 git push origin -d (tagname) (tagname) .....
+
+![](Screenshot%20(53)%20-%20Copy.png)
+![](Screenshot%20(51).png)
 
 #### 4.3.5 Branching in tags
 We cannot checkout tags in git. But, we can create a separate branch, create tags from there and checkout that branch.
 
 git checkout -b (branch name) (tagname)
 
+![](Screenshot%20(53)%20-%20Copy.png)
+
 #### 4.3.6 Creating a tag from past commits
 
 git tag (tagname) (reference code(only first 7 digits))
+
+![](Screenshot%20(54).png)

@@ -3,7 +3,7 @@
 ### What is Git-tagging and why is it used?
 Tags are references that point to specific points in Git history. Tagging is generally used to capture a point in history 
 that is used for a marked version release (i.e. v1.0.1).
-![](Screenshot%20(41).png)
+![](images/Screenshot%20(41).png)
 In the image, it is seen that a number of commits are done from a particular branch (say, master). If we feel that it is an important 
 point in the history of the repo, then we use tags so as to go back and change anything whenever we need.
 
@@ -16,20 +16,20 @@ git tag (tagname)
 ##### 4.3.1.2 Annotated tags
 git tag -a (tagname) -m ('comment')     
 
-![](Screenshot%20(43).png)
+![](images/Screenshot%20(43).png)
 
 #### 4.3.2 Show/display tags
 * git tag 
 * git show (tagname)
 
-![](Screenshot%20(44).png)
+![](images/Screenshot%20(44).png)
 
 #### 4.3.3 Delete tags
 ##### 4.3.3.1 Deleting a single tag
 * git tag -d (tagname)
 * git tag --delete (tagname)
 
-![](Screenshot%20(45).png)
+![](images/Screenshot%20(45).png)
 
 ##### 4.3.3.2 deleting multiple tags
 git tag -d (tagname) (tagname) (tagname) .....
@@ -38,39 +38,39 @@ git tag -d (tagname) (tagname) (tagname) .....
 ##### 4.3.4.1 Pushing from local to remote
 * git push origin (tagname)
 
-![](Screenshot%20(52)%20-%20Copy.png)
-![](Screenshot%20(47).png)
-![](Screenshot%20(48).png)
+![](images/Screenshot%20(52)%20-%20Copy.png)
+![](images/Screenshot%20(47).png)
+![](images/Screenshot%20(48).png)
 
 * git push origin --tags
 * git push --tags
 
-![](Screenshot%20(52).png)
-![](Screenshot%20(49).png)
+![](images/Screenshot%20(52).png)
+![](images/Screenshot%20(49).png)
 
 ##### 4.3.4.2 Deleting tags from remote
 * git push origin -d (tagname)
 * git push origin --delete (tagname)
 * git push origin : (tagname)
 
-![](Screenshot%20(53)%20-%20Copy%20-%20Copy.png)
-![](Screenshot%20(50).png)
+![](images/Screenshot%20(53)%20-%20Copy%20-%20Copy.png)
+![](images/Screenshot%20(50).png)
 
 ##### 4.3.4.2 Deleting mulitple tags from remote
 git push origin -d (tagname) (tagname) .....
 
-![](Screenshot%20(53)%20-%20Copy.png)
-![](Screenshot%20(51).png)
+![](images/Screenshot%20(53)%20-%20Copy.png)
+![](images/Screenshot%20(51).png)
 
 #### 4.3.5 Branching in tags
 We cannot checkout tags in git. But, we can create a separate branch, create tags from there and checkout that branch.
 
 git checkout -b (branch name) (tagname)
 
-![](Screenshot%20(53)%20-%20Copy.png)
+![](images/Screenshot%20(53)%20-%20Copy.png)
 
 #### 4.3.6 Creating a tag from past commits
 
 git tag (tagname) (reference code(only first 7 digits))
 
-![](Screenshot%20(54).png)
+![](images/Screenshot%20(54).png)

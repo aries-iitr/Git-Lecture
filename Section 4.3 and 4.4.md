@@ -29,6 +29,8 @@ git tag -a (tagname) -m ('comment')
 * git tag -d (tagname)
 * git tag --delete (tagname)
 
+![](Screenshot%20(45).png)
+
 ##### 4.3.3.2 deleting multiple tags
 git tag -d (tagname) (tagname) (tagname) .....
 
